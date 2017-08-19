@@ -9,7 +9,7 @@ System.register([], function(exports_1, context_1) {
                 function AuthorService() {
                 }
                 AuthorService.prototype.getAuthors = function () {
-                    return ["Author1", "Author2", "Author33"];
+                    return ["Author1", "Author2", "Author3"];
                 };
                 return AuthorService;
             }());
