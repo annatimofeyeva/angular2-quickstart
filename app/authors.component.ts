@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import{AuthorService} from './author.service'
+import {AuthorService} from './author.service'
 
 
 @Component({
@@ -8,7 +8,7 @@ import{AuthorService} from './author.service'
     <h2>Authors</h2>
   <ul>
     <li *ngFor="#author of authors">
-    {{name}}
+    {{ author }}
     </li>
   </ul>
   `,
@@ -17,8 +17,8 @@ import{AuthorService} from './author.service'
 
 
 export class AuthorsComponent{
-  name: string = "The name of author";
-  authors;
+  authors: string [];
+  title = "Title for the author page"
   constructor(authorService: AuthorService) {
     this.authors = authorService.getAuthors();
   }
